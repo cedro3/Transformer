@@ -44,7 +44,7 @@ def get_chABSA_DataLoaders_and_TEXT(max_length=256, batch_size=8):
 
     # 分かち書き
     def tokenizer_mecab(text):
-        m_t = MeCab.Tagger('-Owakati -d /usr/local/lib/mecab/dic/mecab-ipadic-neologd')
+        m_t = MeCab.Tagger('-Owakati -d /usr/lib/x86_64-linux-gnu/mecab/dic/mecab-ipadic-neologd')
         text = m_t.parse(text)  # これでスペースで単語が区切られる
         ret = text.strip().split()  # スペース部分で区切ったリストに変換
         return ret
@@ -110,7 +110,7 @@ def preprocessing_text(text):
 
 # 分かち書き
 def tokenizer_mecab(text):
-    m_t = MeCab.Tagger('-Owakati -d /usr/local/lib/mecab/dic/mecab-ipadic-neologd')
+    m_t = MeCab.Tagger('-Owakati -d /usr/lib/x86_64-linux-gnu/mecab/dic/mecab-ipadic-neologd')
     text = m_t.parse(text)  # これでスペースで単語が区切られる
     ret = text.strip().split()  # スペース部分で区切ったリストに変換
     return ret
