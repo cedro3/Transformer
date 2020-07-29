@@ -9,3 +9,7 @@
  Transformerによる日本語データのネガポジ判定と根拠の可視化を行うコードです。\
  ・使用するデータセットはchABSA-datasetです。これは、日本の上場企業の有価証券報告書から文章を取り出し、それがポジテイブな表現なのか、ネガティブな表現なのかをまとめたものです。\
  ・学習後、テスト文章で推論を行い、その文章のどの単語が判断根拠になっているか(Attention)を可視化します。
+
+（参考）
+・[つくりながら学ぶ! PyTorchによる発展ディープラーニング](https://github.com/YutaroOgawa/pytorch_advanced)\
+・[ディープラーニングでネガポジ分析アプリを作ってみた（python）【前編】](https://sinyblog.com/deaplearning/transformer_001/)
